@@ -1,0 +1,1 @@
+- onclick: fullscreen, play music, begin timeline animations (timeline is a .js file)

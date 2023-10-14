@@ -1,0 +1,92 @@
+This folder: /home/daniella/new-proj-html
+
+  File: ./background.jpg
+  Size: 796984    	Blocks: 1560       IO Block: 4096   regular file
+Device: 8,38	Inode: 9255664     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-14 01:55:47.546194379 -0300
+Modify: 2023-10-01 14:49:31.093261200 -0300
+Change: 2023-10-14 01:55:38.966450512 -0300
+ Birth: 2023-10-14 01:54:10.669140950 -0300
+IPFS hash: QmNpxQzLr2MJZjwTuEMjpPjtzgffiG33VwKgGgF2MLdJDG
+------------------------------
+  File: ./index-2.html
+  Size: 78        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9235243     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-14 01:57:21.907431993 -0300
+Modify: 2023-10-14 01:57:18.171539577 -0300
+Change: 2023-10-14 01:57:18.179539346 -0300
+ Birth: 2023-10-14 01:57:18.171539577 -0300
+IPFS hash: QmRfzJcBewBbAKCzLYd3tomxcCgBpMZw7gEdnwKkxnuP8S
+------------------------------
+  File: ./index-3.html
+  Size: 76        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9267691     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-14 01:57:40.650894302 -0300
+Modify: 2023-10-14 01:57:34.251077511 -0300
+Change: 2023-10-14 01:57:34.267077052 -0300
+ Birth: 2023-10-14 01:57:34.251077511 -0300
+IPFS hash: QmcnHi2kGRUAkBt4tNE9PgJp4AE9JCzPCiBdUCZ1e7LDnv
+------------------------------
+  File: ./index-4.html
+  Size: 78        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9267683     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-14 01:58:35.533338682 -0300
+Modify: 2023-10-14 01:57:18.171539577 -0300
+Change: 2023-10-14 01:58:33.133406148 -0300
+ Birth: 2023-10-14 01:58:27.637560833 -0300
+IPFS hash: QmRfzJcBewBbAKCzLYd3tomxcCgBpMZw7gEdnwKkxnuP8S
+------------------------------
+  File: ./index-5.html
+  Size: 77        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9267688     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-14 02:00:48.045683950 -0300
+Modify: 2023-10-14 02:00:00.278986322 -0300
+Change: 2023-10-14 02:00:00.298985774 -0300
+ Birth: 2023-10-14 02:00:00.278986322 -0300
+IPFS hash: QmTSLzSsvJooFnLTGbNsRm253NLWnWNM1fTMXnRMJnkWqU
+------------------------------
+  File: ./index.html
+  Size: 67        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9267681     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-14 01:56:39.172671107 -0300
+Modify: 2023-10-14 01:56:33.008851410 -0300
+Change: 2023-10-14 01:56:33.028850825 -0300
+ Birth: 2023-10-14 01:56:33.008851410 -0300
+IPFS hash: QmbKQUUTWg1ZKfSVU9E9YcemZZHNz3fVG6CqUnwMqD2MvZ
+------------------------------
+  File: ./stage-lights-background.jpg
+  Size: 802569    	Blocks: 1568       IO Block: 4096   regular file
+Device: 8,38	Inode: 9267713     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-14 20:20:36.626067531 -0300
+Modify: 2023-10-14 20:19:52.214639269 -0300
+Change: 2023-10-14 20:20:36.426069996 -0300
+ Birth: 2023-10-14 20:19:52.202639430 -0300
+IPFS hash: QmRVLtXrHabFGpaMPsKvfZkqZcSVNSqBPD4AcUaUs9huUx
+------------------------------
+  File: ./Tasks-2.txt
+  Size: 86        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9267698     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-14 02:01:42.580215407 -0300
+Modify: 2023-10-14 02:01:42.580215407 -0300
+Change: 2023-10-14 02:01:42.584215300 -0300
+ Birth: 2023-10-14 02:01:42.580215407 -0300
+IPFS hash: Qmap5TZj8sCmcznR1ABwaYHf5oXEy8grgCyCcUh5FYa87x
+------------------------------
+  File: ./Tasks.txt
+  Size: 93        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9255384     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-14 02:01:29.920554667 -0300
+Modify: 2023-10-14 02:01:26.228653790 -0300
+Change: 2023-10-14 02:01:26.248653252 -0300
+ Birth: 2023-10-14 02:01:26.228653790 -0300
+IPFS hash: QmcedBejznYQ8jH4Hgx4wLeTSpy2B7e9DPygujkTUBZNAp
+------------------------------
