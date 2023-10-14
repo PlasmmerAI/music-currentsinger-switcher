@@ -1,5 +1,37 @@
-commit QmSBR1H2RdE2vdMvJQvtG5zNnDUFFo8RdsVdJjWywK7Lm5
-Branch: HEAD
+commit Qmc8Q9rK9KVAuUTFBApdBjXm78v5J1AtKpaVUgUjVoyrN8
+Branch: main
 
 ------------------------------
 
+chown -h 1000:1000 './.folderstamp1'
+chmod 0777 './.folderstamp1'
+/usr/bin/touch -hcmd "2023-10-14 20:29:49.2266606000 -0300" './.folderstamp1'
+/usr/bin/touch -hcad "2023-10-14 20:31:14.5314996000 -0300" './.folderstamp1'
+chown -h 1000:1000 './.folderstamp2'
+chmod 0777 './.folderstamp2'
+/usr/bin/touch -hcmd "2023-10-14 20:31:17.7258080000 -0300" './.folderstamp2'
+/usr/bin/touch -hcad "2023-10-14 20:36:06.6891193000 -0300" './.folderstamp2'
+chown -h 1000:1000 './.gitmeta'
+chmod 0777 './.gitmeta'
+/usr/bin/touch -hcmd "2023-10-14 20:36:11.2945568000 -0300" './.gitmeta'
+/usr/bin/touch -hcad "2023-10-14 20:36:11.2957265000 -0300" './.gitmeta'
+chown -h 1000:1000 './.gitmeta-cid'
+chmod 0777 './.gitmeta-cid'
+/usr/bin/touch -hcmd "2023-10-14 20:36:11.2395966000 -0300" './.gitmeta-cid'
+/usr/bin/touch -hcad "2023-10-14 20:36:10.8988555000 -0300" './.gitmeta-cid'
+chown -h 1000:1000 './Tasks.txt'
+chmod 0777 './Tasks.txt'
+/usr/bin/touch -hcmd "2023-10-14 02:01:42.5802154000 -0300" './Tasks.txt'
+/usr/bin/touch -hcad "2023-10-14 20:25:00.9122659000 -0300" './Tasks.txt'
+chown -h 1000:1000 './index.html'
+chmod 0777 './index.html'
+/usr/bin/touch -hcmd "2023-10-14 20:24:06.9759414000 -0300" './index.html'
+/usr/bin/touch -hcad "2023-10-14 20:24:54.4820587000 -0300" './index.html'
+chown -h 1000:1000 './powerpoint_imgs-todo/Marilia/image.jpg'
+chmod 0777 './powerpoint_imgs-todo/Marilia/image.jpg'
+/usr/bin/touch -hcmd "2023-10-14 20:27:42.8731218000 -0300" './powerpoint_imgs-todo/Marilia/image.jpg'
+/usr/bin/touch -hcad "2023-10-14 20:27:45.2917030000 -0300" './powerpoint_imgs-todo/Marilia/image.jpg'
+chown -h 1000:1000 './powerpoint_imgs-todo/Nelson/img20170104151905514076.jpg'
+chmod 0777 './powerpoint_imgs-todo/Nelson/img20170104151905514076.jpg'
+/usr/bin/touch -hcmd "2023-10-14 20:28:01.0819883000 -0300" './powerpoint_imgs-todo/Nelson/img20170104151905514076.jpg'
+/usr/bin/touch -hcad "2023-10-14 20:28:04.2762514000 -0300" './powerpoint_imgs-todo/Nelson/img20170104151905514076.jpg'
