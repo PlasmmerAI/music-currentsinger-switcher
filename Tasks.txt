@@ -1,4 +1,3 @@
-- fix img positions based on that yt thumbnail
 - ask cursor how to support ms in seconds
 - when clicked, element startButton disappear
 
