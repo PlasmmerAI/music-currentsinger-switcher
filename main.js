@@ -14,13 +14,22 @@ startButton.addEventListener('click', () => {
   const timeline = [
     { time: 00, singers: ['nelsonned', 'mariliamendonça'] },
     { time: 01, singers: [] },
-    { time: 21.0, singers: ['mariliamendonça'] },
-    { time: 23.0, singers: ['nelsonned', 'mariliamendonça'] },
-    { time: 25.0, singers: ['mariliamendonça'] },
-    { time: 28.0, singers: ['nelsonned'] },
-    { time: 35.0, singers: [] },
-    { time: 36.0, singers: ['nelsonned'] },
-    { time: 47.0, singers: ['nelsonned', 'mariliamendonça'] }
+    { time: 21.377, singers: ['mariliamendonça'] },
+    { time: 23.305, singers: ['nelsonned', 'mariliamendonça'] },
+    { time: 25.407, singers: ['mariliamendonça'] },
+    { time: 28.561, singers: ['nelsonned'] },
+    { time: 34.869, singers: [] },
+    { time: 35.921, singers: ['nelsonned'] },
+    { time: 42.053, singers: [] },
+    { time: 43.630, singers: ['nelsonned'] },
+    { time: 47.310, singers: ['nelsonned', 'mariliamendonça'] },
+    { time: 50.114, singers: [] },
+    { time: 52.041, singers: ['mariliamendonça'] },
+    { time: 109.038, singers: ['nelsonned', 'mariliamendonça'] },
+    { time: 113.769, singers: [] },
+    { time: 114.294, singers: ['nelsonned', 'mariliamendonça'] },
+    { time: 119.376, singers: [] },
+    { time: 121.479, singers: ['mariliamendonça'] }
   ];
 
   // Function to update the active singers
