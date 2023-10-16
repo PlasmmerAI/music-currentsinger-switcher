@@ -1,7 +1,3 @@
-- improve elements' sizes
-- fix nelsonned imgs
-- add UAC logotype
-
 Not priority:
 - Add a 5 seconds delay after fullscreen, with a counter div that then will disappear
 - faster way of preloading CSS active background images (by leveraging the above)
