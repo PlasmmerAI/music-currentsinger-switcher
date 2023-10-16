@@ -1,5 +1,6 @@
 - fix img positions based on that yt thumbnail
+- ask cursor how to support ms in seconds
 - when clicked, element startButton disappear
-- ask cursor to support ms in seconds
 
--? Add a 5 seconds delay after fullscreen, with a counter div that then will disappear
+Not priority:
+- Add a 5 seconds delay after fullscreen, with a counter div that then will disappear
