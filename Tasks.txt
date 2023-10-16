@@ -1,1 +1,1 @@
-- onclick: fullscreen, play music, begin timeline animations (timeline is a .js file)
+- Add a 5 seconds delay after fullscreen, with a counter div that then will disappear
