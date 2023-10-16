@@ -25,11 +25,11 @@ startButton.addEventListener('click', () => {
     { time: 47.310, singers: ['nelsonned', 'mariliamendonça'] },
     { time: 50.114, singers: [] },
     { time: 52.041, singers: ['mariliamendonça'] },
-    { time: 109.038, singers: ['nelsonned', 'mariliamendonça'] },
-    { time: 113.769, singers: [] },
-    { time: 114.294, singers: ['nelsonned', 'mariliamendonça'] },
-    { time: 119.376, singers: [] },
-    { time: 121.479, singers: ['mariliamendonça'] }
+    { time: '1:09.038', singers: ['nelsonned', 'mariliamendonça'] },
+    { time: '1:13.769', singers: [] },
+    { time: '1:14.294', singers: ['nelsonned', 'mariliamendonça'] },
+    { time: '1:19.376', singers: [] },
+    { time: '1:21.479', singers: ['mariliamendonça'] }
   ];
 
   // Function to update the active singers
@@ -53,16 +53,26 @@ startButton.addEventListener('click', () => {
 
   // Function to check the current time and update the active singers accordingly
   const checkTimeAndUpdateSingers = () => {
-    const currentTime = Math.floor(audio.currentTime * 1000);
-  
-    // Find the timeline entry for the current time
+    const currentTime = audio.currentTime;
+
+    // Find the timelineundefinedentry for the current time
     const currentEntry = timeline.find((entry) => {
-      const entryTime = Math.floor(entry.time * 1000);
-      const nextEntry = timeline[timeline.indexOf(entry) + 1];
-      const nextEntryTime = nextEntry ? Math.floor(nextEntry.time * 1000) : Infinity;
-      return currentTime >= entryTime && currentTime < nextEntryTime;
+      if (typeof entry.time === 'number') {
+        // Handle entries with only seconds
+        return Math.floor(entry.time) === Math.floor(currentTime);
+      } else if (typeof entry.time === 'string') {
+        if (entry.time.includes(':')) {
+          // Handle entries with minutes and seconds
+          const [minutes, seconds] = entry.time.split(':');
+          const entryTime = parseInt(minutes) * 60 + parseInt(seconds);
+          return Math.floor(entryTime) === Math.floor(currentTime);
+        } else {
+          // Handle entries with milliseconds
+          return Math.floor(entry.time * 1000) === Math.floor(currentTime * 1000);
+        }
+      }
     });
-  
+
     if (currentEntry) {
       updateActiveSingers(currentEntry.singers);
     }
