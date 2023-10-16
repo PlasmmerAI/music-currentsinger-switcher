@@ -1,0 +1,30 @@
+Let's create an web (HTML, CSS, JS) project.
+
+index.html will be responsible for a fullscreen music presentation that will be usable by OBS Studio (please don't add OBS-related coding, as this tool will be used manually and externally).
+
+index.html will contain a button written "Start", and when clicked: browser will go fullscreen and the file music.mp3 will begin playing instantly.
+
+Then, there will be a JS file you should write as well: timeline.js.
+
+index.html will contain two divs, that through CSS will have one image each. Specifically, I'll put singers' images to these.
+Each of these two divs will have an "active" CSS class (so each singer will change the image to one glowing and with an arrow pointing to their head, to point which singer is currently singing), and this class will be removed or added according to the specified in timeline.js.
+
+timeline.js should have a JSON-like structure containing the time points (loyal to the same time from the music.mp3 file) each singer will be active or inactive. There'll be also moments when both singers are inactive or both active.
+
+Timeline begin when the "Start" button event is triggered, so timeline.js will try to be in sync with music.mp3!
+
+Let's name the singers' divs: one will be class "nelsonned" and other "mariliamendonça".
+
+For timeline.js:
+music.mp3 has the full lenght of 03:32 (3 minutes, 32 seconds).
+At the time point of 00:21 (21 seconds since the begin), timeline.js will make "mariliamendonça" active (so it will be class="mariliamendonça active").
+At 00:23, both nelsonned and mariliamendonça are active.
+At 00:25, only mariliamendonça is active.
+At 00:28, only nelsonned is active.
+At 00:35, nelsonned is back inactive (which mean both nelsonned and mariliamendonça are now inactive).
+At 00:36, nelsonned is back active.
+At 00:47, both nelsonned and mariliamendonça are active.
+
+Please add a main.js file as well, which will control the "Start" button event (fullscreen, play music.mp3 and timeline.js in sync).
+
+Then, after all done (index.html, main.js, timeline.js, etc), I will be able to complete the timeline.js file following the previous coding.
