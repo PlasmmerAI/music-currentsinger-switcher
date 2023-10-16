@@ -1,0 +1,72 @@
+This folder: /media/daniella/Windows 10 main/Users/Daniell/Desktop/new-proj-html/Cursor
+
+  File: ./index.html
+  Size: 509       	Blocks: 1          IO Block: 4096   regular file
+Device: 8,35	Inode: 91669       Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-15 22:53:47.366220400 -0300
+Modify: 2023-10-15 17:57:01.290462400 -0300
+Change: 2023-10-15 22:53:47.360013800 -0300
+ Birth: -
+IPFS hash: QmcWMXiAPnykhq3tZYJVj2XhuideCcKUJzctemux1i8yx8
+------------------------------
+  File: ./InitialPromptCursorGPTResponse.txt
+  Size: 820       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,35	Inode: 91697       Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-15 22:54:47.421540100 -0300
+Modify: 2023-10-15 17:59:49.284371300 -0300
+Change: 2023-10-15 22:53:47.367108000 -0300
+ Birth: -
+IPFS hash: QmVZRsqEREzytFhmvuahPkxPe8V2jbpCjZRGNJRwqdrD3q
+------------------------------
+  File: ./InitialPromptCursorGPT.txt
+  Size: 2148      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,35	Inode: 91684       Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-15 22:54:47.419090300 -0300
+Modify: 2023-10-15 17:59:50.280384400 -0300
+Change: 2023-10-15 22:53:47.363747500 -0300
+ Birth: -
+IPFS hash: QmXPsKTEPGe46hdjBwBm4cTgA8LsCg4eWaTfwTDwCSyx1P
+------------------------------
+  File: ./main.js
+  Size: 1929      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,35	Inode: 91703       Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-15 22:54:47.430294900 -0300
+Modify: 2023-10-15 17:57:03.526483300 -0300
+Change: 2023-10-15 22:53:47.372360300 -0300
+ Birth: -
+IPFS hash: QmSDxMuckGHYk32THx2WwwHhq9dzCVxJ5mPDVAq4fmpsot
+------------------------------
+  File: ./music.mp3
+  Size: 8491098   	Blocks: 16592      IO Block: 4096   regular file
+Device: 8,35	Inode: 91717       Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-15 22:51:14.775702300 -0300
+Modify: 2023-10-13 19:09:36.894157200 -0300
+Change: 2023-10-15 22:53:47.486274900 -0300
+ Birth: -
+IPFS hash: QmX4WVeHMcXcoN3xhAb7fqiWeegoMSQKh75K6CkiSQDAJ8
+------------------------------
+  File: ./Tasks.txt
+  Size: 84        	Blocks: 1          IO Block: 4096   regular file
+Device: 8,35	Inode: 91735       Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-15 22:54:47.424751900 -0300
+Modify: 2023-10-15 17:59:00.007746100 -0300
+Change: 2023-10-15 22:53:47.496304700 -0300
+ Birth: -
+IPFS hash: QmX6Vbz138VgBR1sREXFnkNurwe2jsUqAQTpcCTnZZj1Qy
+------------------------------
+  File: ./timeline.js
+  Size: 367       	Blocks: 1          IO Block: 4096   regular file
+Device: 8,35	Inode: 91736       Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-15 22:54:47.433053500 -0300
+Modify: 2023-10-15 17:57:05.910505800 -0300
+Change: 2023-10-15 22:53:47.499110200 -0300
+ Birth: -
+IPFS hash: QmXyHRC7caJk55pwgVdgcMmZ19cRCsyJNfAUJyGMDLLJgf
+------------------------------
