@@ -1,0 +1,108 @@
+About main.js' timeline: there's support for seconds.
+
+But what about the precision of miliseconds?
+Can a decimal after dot be used?
+
+
+
+
+
+The main.js file currently supports seconds in the timeline, but it does not have built-in support for milliseconds. The timeline entries in the timeline array are defined in whole seconds. If you need to add support for milliseconds, you would need to modify the code in main.js to handle the additional precision. This could involve changing the data structure of the timeline array to include milliseconds, updating the checkTimeAndUpdateSingers function to consider milliseconds when checking the current time, and modifying the logic that updates the active singers accordingly.
+
+
+
+
+
+
+
+
+
+Ok, please write that for me.
+
+
+
+
+
+
+
+
+
+To add support for milliseconds in the main.js file, you will need to make several modifications.
+
+First, you need to update the data structure of the timeline array to include milliseconds. You can modify each entry to have a time property that represents the time in seconds and milliseconds. For example:
+
+const timeline = [
+  { time: 21.5, singers: ['mariliamendonça'] },
+  { time: 23.2, singers: ['nelsonned', 'mariliamendonça'] },
+  { time: 25.8, singers: ['mariliamendonça'] },
+  // ...
+];
+
+
+Next, you need to update the checkTimeAndUpdateSingers function to consider milliseconds when checking the current time. You can use the audio.currentTime property, which represents the current time in seconds, and multiply it by 1000 to convert it to milliseconds. Then, you can use Math.floor to round down the value to the nearest whole millisecond. For example:
+
+const checkTimeAndUpdateSingers = () => {
+  const currentTime = Math.floor(audio.currentTime * 1000);
+
+  // Find the timeline entry for the current time
+  const currentEntry = timeline.find((entry) => entry.time * 1000 === currentTime);
+
+  if (currentEntry) {
+    updateActiveSingers(currentEntry.singers);
+  }
+};
+
+Finally, you need to update the logic that updates the active singers accordingly. Since the currentTime now represents milliseconds, you need to modify the comparison in the find function to compare the time property of each entry with the currentTime in milliseconds. For example:
+
+const currentEntry = timeline.find((entry) => entry.time * 1000 === currentTime);
+
+With these modifications, the main.js file will now support milliseconds in the timeline. Remember to update the timeline entries and the logic accordingly.
+
+
+
+
+
+
+
+
+
+
+Now the script is not working.
+
+Because you didn't consider that I won't use miliseconds for EVERY entry in timeline.
+
+Example:
+
+```
+const timeline = [
+  { time: 21.5, singers: ['mariliamendonça'] },
+  { time: 23, singers: ['nelsonned', 'mariliamendonça'] },
+  { time: 25.8, singers: ['mariliamendonça'] },
+  // ...
+];
+```
+
+
+
+
+
+
+To fix the issue with the script not working when using milliseconds for some entries in the timeline, you can modify the checkTimeAndUpdateSingers function in the main.js file. Instead of using strict equality (===) to compare the time in milliseconds, you can use a range comparison to check if the current time falls within the range of the timeline entry. Here's an example of how you can modify the function:
+
+const checkTimeAndUpdateSingers = () => {
+  const currentTime = Math.floor(audio.currentTime * 1000);
+
+  // Find the timeline entry for the current time
+  const currentEntry = timeline.find((entry) => {
+    const entryTime = Math.floor(entry.time * 1000);
+    const nextEntry = timeline[timeline.indexOf(entry) + 1];
+    const nextEntryTime = nextEntry ? Math.floor(nextEntry.time * 1000) : Infinity;
+    return currentTime >= entryTime && currentTime < nextEntryTime;
+  });
+
+  if (currentEntry) {
+    updateActiveSingers(currentEntry.singers);
+  }
+};
+
+With this modification, the checkTimeAndUpdateSingers function will find the timeline entry whose time range includes the current time, allowing you to use both whole seconds and milliseconds in the timeline.

@@ -14,13 +14,13 @@ startButton.addEventListener('click', () => {
   const timeline = [
     { time: 00, singers: ['nelsonned', 'mariliamendonça'] },
     { time: 01, singers: [] },
-    { time: 21, singers: ['mariliamendonça'] },
-    { time: 23, singers: ['nelsonned', 'mariliamendonça'] },
-    { time: 25, singers: ['mariliamendonça'] },
-    { time: 28, singers: ['nelsonned'] },
-    { time: 35, singers: [] },
-    { time: 36, singers: ['nelsonned'] },
-    { time: 47, singers: ['nelsonned', 'mariliamendonça'] }
+    { time: 21.0, singers: ['mariliamendonça'] },
+    { time: 23.0, singers: ['nelsonned', 'mariliamendonça'] },
+    { time: 25.0, singers: ['mariliamendonça'] },
+    { time: 28.0, singers: ['nelsonned'] },
+    { time: 35.0, singers: [] },
+    { time: 36.0, singers: ['nelsonned'] },
+    { time: 47.0, singers: ['nelsonned', 'mariliamendonça'] }
   ];
 
   // Function to update the active singers
@@ -44,11 +44,16 @@ startButton.addEventListener('click', () => {
 
   // Function to check the current time and update the active singers accordingly
   const checkTimeAndUpdateSingers = () => {
-    const currentTime = Math.floor(audio.currentTime);
-
+    const currentTime = Math.floor(audio.currentTime * 1000);
+  
     // Find the timeline entry for the current time
-    const currentEntry = timeline.find((entry) => entry.time === currentTime);
-
+    const currentEntry = timeline.find((entry) => {
+      const entryTime = Math.floor(entry.time * 1000);
+      const nextEntry = timeline[timeline.indexOf(entry) + 1];
+      const nextEntryTime = nextEntry ? Math.floor(nextEntry.time * 1000) : Infinity;
+      return currentTime >= entryTime && currentTime < nextEntryTime;
+    });
+  
     if (currentEntry) {
       updateActiveSingers(currentEntry.singers);
     }
