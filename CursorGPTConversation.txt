@@ -1,6 +1,5 @@
-About main.js' timeline:
+when clicked, element startButton disappear
 
-Starting in 109.038, to 121.479, I tried to implement support for minutes, but didn't work.
 
 
 
@@ -8,219 +7,20 @@ Starting in 109.038, to 121.479, I tried to implement support for minutes, but d
 
 
 
+To make the startButton disappear when it is clicked, you can add the following code to the main.js file:
 
+startButton.addEventListener('click', () => {
+  // Go fullscreen
+  document.documentElement.requestFullscreen();
 
+  // Play the music
+  const audio = new Audio('music.mp3');
+  audio.play();
 
+  // Hide the start button
+  startButton.style.display = 'none';
 
-To add support for minutes in the main.js file's timeline, you need to make the following modifications:
+  // Rest of the code...
+});
 
-1. Update the data structure of the timeline array to include minutes. Modify each entry to have a time property that represents the time in minutes and seconds. For example:
-
-   const timeline = [
-     { time: '1:00', singers: ['nelsonned', 'mariliamendonça'] },
-     { time: '2:00', singers: [] },
-     // ...
-   ];
-   
-2. Update the checkTimeAndUpdateSingers function to consider minutes when checking the current time. You can split the time string into minutes and seconds using the split method and convert them to numbers. Then, multiply the minutes by 60 and add the seconds to get the total time in seconds. For example:
-
-   const checkTimeAndUpdateSingers = () => {
-     const currentTime = Math.floor(audio.currentTime);
-     const [minutes, seconds] = currentEntry.time.split(':');
-     const entryTime = parseInt(minutes) * 60 + parseInt(seconds);
-
-     // Find the timeline entry for the current time
-     const currentEntry = timeline.find((entry) => {
-       const [entryMinutes, entrySeconds] = entry.time.split(':');
-       const entryTimeInSeconds = parseInt(entryMinutes) * 60 + parseInt(entrySeconds);
-       const nextEntry = timeline[timeline.indexOf(entry) + 1];
-       const nextEntryTime = nextEntry ? parseInt(nextEntry.time.split(':')[0]) * 60 + parseInt(nextEntry.time.split(':')[1]) : Infinity;
-       return currentTime >= entryTimeInSeconds && currentTime < nextEntryTime;
-     });
-
-     if (currentEntry) {
-       updateActiveSingers(currentEntry.singers);
-     }
-   };
-   
-With these modifications, the main.js file will support minutes in the timeline. Make sure to update the timeline entries and the logic accordingly.
-
-
-
-
-
-
-
-
-Does that still support ms?
-
-Yes, the modified code in the main.js file still supports milliseconds. The checkTimeAndUpdateSingers function has been updated to consider milliseconds when checking the current time. The comparison in the find function now compares the time property of each entry with the currentTime in milliseconds. Here's the modified code:
-
-const checkTimeAndUpdateSingers = () => {
-  const currentTime = Math.floor(audio.currentTime * 1000);
-
-  // Find the timeline entry for the current time
-  const currentEntry = timeline.find((entry) => {
-    const entryTime = Math.floor(entry.time * 1000);
-    const nextEntry = timeline[timeline.indexOf(entry) + 1];
-    const nextEntryTime = nextEntry ? Math.floor(nextEntry.time * 1000) : Infinity;
-    return currentTime >= entryTime && currentTime < nextEntryTime;
-  });
-
-  if (currentEntry) {
-    updateActiveSingers(currentEntry.singers);
-  }
-};
-
-With this modification, the checkTimeAndUpdateSingers function will find the timeline entry whose time range includes the current time, allowing you to use both whole seconds and milliseconds in the timeline. Remember to update the timeline entries and the logic accordingly.
-
-
-
-
-
-
-
-
-
-Stuff like 1:21.479 don't work.
-
-
-
-
-
-
-
-
-
-To support time values like "1:21.479" in the main.js file's timeline, you need to make the following modifications:
-
-1. Update the data structure of the timeline array to include minutes, seconds, and milliseconds. Modify each entry to have a time property that represents the time in the format "mm:ss.sss". For example:
-
-   const timeline = [
-     { time: '01:21.479', singers: ['mariliamendonça'] },
-     { time: '02:30.000', singers: ['nelsonned', 'mariliamendonça'] },
-     // ...
-   ];
-   
-2. Update the checkTimeAndUpdateSingers function to consider minutes, seconds, and milliseconds when checking the current time. Split the time string into minutes, seconds, and milliseconds using the split method. Convert them to numbers and calculate the total time in milliseconds. For example:
-
-   const checkTimeAndUpdateSingers = () => {
-     const currentTime = audio.currentTime * 1000;
-     const [minutes, seconds, milliseconds] = currentEntry.time.split(':');
-     const entryTime = parseInt(minutes) * 60 * 1000 + parseInt(seconds) * 1000 + parseInt(milliseconds);
-
-     // Find the timeline entry for the current time
-     const currentEntry = timeline.find((entry) => {
-       const [entryMinutes, entrySeconds, entryMilliseconds] = entry.time.split(':');
-       const entryTimeInMilliseconds = parseInt(entryMinutes) * 60 * 1000 + parseInt(entrySeconds) * 1000 + parseInt(entryMilliseconds);
-       const nextEntry = timeline[timeline.indexOf(entry) + 1];
-       const nextEntryTime = nextEntry ? parseInt(nextEntry.time.split(':')[0]) * 60 * 1000 + parseInt(nextEntry.time.split(':')[1]) * 1000 + parseInt(nextEntry.time.split(':')[2]) : Infinity;
-       return currentTime >= entryTimeInMilliseconds && currentTime < nextEntryTime;
-     });
-
-     if (currentEntry) {
-       updateActiveSingers(currentEntry.singers);
-     }
-   };
-   
-With these modifications, the main.js file will support time values in the format "mm:ss.sss" in the timeline. Make sure to update the timeline entries and the logic accordingly.
-
-
-
-
-
-
-
-
-Okay, but what about when a time is defined in the timeline as 23.305?
-
-
-
-
-
-
-
-
-
-To support a time value like "23.305" in the main.js file's timeline, you need to make the following modifications:
-
-1. Update the data structure of the timeline array to include milliseconds. Modify each entry to have a time property that represents the time in seconds and milliseconds. For example:
-
-   const timeline = [
-     { time: 21.5, singers: ['mariliamendonça'] },
-     { time: 23.305, singers: ['nelsonned', 'mariliamendonça'] },
-     { time: 25.8, singers: ['mariliamendonça'] },
-     // ...
-   ];
-   
-2. Update the checkTimeAndUpdateSingers function to consider milliseconds when checking the current time. Multiply the audio.currentTime property by 1000 to convert it to milliseconds. Use Math.floor to round down the value to the nearest whole millisecond. For example:
-
-   const checkTimeAndUpdateSingers = () => {
-     const currentTime = Math.floor(audio.currentTime * 1000);
-
-     // Find the timeline entry for the current time
-     const currentEntry = timeline.find((entry) => entry.time * 1000 === currentTime);
-
-     if (currentEntry) {
-       updateActiveSingers(currentEntry.singers);
-     }
-   };
-   
-With these modifications, the main.js file will support time values like "23.305" in the timeline. Remember to update the timeline entries and the logic accordingly.
-
-
-
-
-
-
-
-
-
-
-I mean, we do currently support minutes, right?
-But not all entries should have minutes.
-Some will use seconds, or miliseconds as well; not minutes.
-And others will use minutes and seconds, and others minutes seconds and miliseconds.
-
-
-
-
-
-
-To support different time formats in the main.js file's timeline, you can make the following modifications:
-
-1. Update the data structure of the timeline array to include the necessary time properties. Modify each entry to have a time property that represents the time in the desired format. For example:
-- For entries with only seconds: { time: 23, singers: ['mariliamendonça'] }
-- For entries with milliseconds: { time: 23.305, singers: ['nelsonned', 'mariliamendonça'] }
-- For entries with minutes and seconds: { time: '1:23', singers: ['mariliamendonça'] }
-- For entries with minutes, seconds, and milliseconds: { time: '1:23.305', singers: ['nelsonned', 'mariliamendonça'] }
-
-2. Update the checkTimeAndUpdateSingers function to consider the different time formats when checking the current time. You can use conditional statements or regular expressions to handle the different cases. Here's an example of how you can modify the function to handle the different time formats:
-
-   const checkTimeAndUpdateSingers = () => {
-     const currentTime = audio.currentTime;
-
-     // Find the timelineundefinedentry for the current time
-     const currentEntry = timeline.find((entry) => {
-       if (typeof entry.time === 'number') {
-         // Handle entries with only seconds
-         return Math.floor(entry.time) === Math.floor(currentTime);
-       } else if (typeof entry.time === 'string') {
-         if (entry.time.includes(':')) {
-           // Handle entries with minutes and seconds
-           const [minutes, seconds] = entry.time.split(':');
-           const entryTime = parseInt(minutes) * 60 + parseInt(seconds);
-           return Math.floor(entryTime) === Math.floor(currentTime);
-         } else {
-           // Handle entries with milliseconds
-           return Math.floor(entry.time * 1000) === Math.floor(currentTime * 1000);
-         }
-       }
-     });
-
-     if (currentEntry) {
-       updateActiveSingers(currentEntry.singers);
-     }
-   };
-   
-With these modifications, the main.js file will support different time formats in the timeline. You can have entries with only seconds, milliseconds, minutes and seconds, or minutes, seconds, and milliseconds. Make sure to update the timeline entries and the logic accordingly.
+This code uses the style.display property to set the startButton element's display to 'none', effectively hiding it when the button is clicked.

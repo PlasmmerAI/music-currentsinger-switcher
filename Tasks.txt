@@ -1,4 +1,3 @@
-- when clicked, element startButton disappear
 - faster way of preloading CSS active background images
 - load CSS from external file
 

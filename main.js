@@ -6,6 +6,9 @@ startButton.addEventListener('click', () => {
   // Go fullscreen
   document.documentElement.requestFullscreen();
 
+  // Hide the start button
+  startButton.style.display = 'none';
+
   // Play the music
   const audio = new Audio('music.mp3');
   audio.play();
