@@ -9,10 +9,6 @@ startButton.addEventListener('click', () => {
   // Hide the start button
   startButton.style.display = 'none';
 
-  // Play the music
-  const audio = new Audio('music.mp3');
-  audio.play();
-
   // Define the timeline
   const timeline = [
     { time: 00, singers: ['nelsonned', 'mariliamendonça'] },
@@ -32,7 +28,27 @@ startButton.addEventListener('click', () => {
     { time: '1:13.769', singers: [] },
     { time: '1:14.294', singers: ['nelsonned', 'mariliamendonça'] },
     { time: '1:19.376', singers: [] },
-    { time: '1:21.479', singers: ['mariliamendonça'] }
+    { time: '1:21.479', singers: ['mariliamendonça'] },
+    { time: '1:36.197', singers: ['nelsonned', 'mariliamendonça'] },
+    { time: '1:46.535', singers: [] },
+    { time: '1:49.689', singers: ['nelsonned'] },
+    { time: '1:53.719', singers: ['mariliamendonça'] },
+    { time: '1:56.873', singers: ['nelsonned', 'mariliamendonça'] },
+    { time: '2:07.912', singers: ['nelsonned'] },
+    { time: '2:16.148', singers: ['nelsonned', 'mariliamendonça'] },
+    { time: '2:19.652', singers: [] },
+    { time: '2:20.529', singers: ['nelsonned', 'mariliamendonça'] },
+    { time: '2:22.982', singers: ['mariliamendonça'] },
+    { time: '2:35.247', singers: ['nelsonned', 'mariliamendonça'] },
+    { time: '2:48.214', singers: [] },
+    { time: '2:49.966', singers: ['nelsonned', 'mariliamendonça'] },
+    { time: '3:03.984', singers: [] },
+    { time: '3:04.860', singers: ['mariliamendonça'] },
+    { time: '3:07.488', singers: ['nelsonned', 'mariliamendonça'] },
+    { time: '3:10.993', singers: [] },
+    { time: '3:12.394', singers: ['mariliamendonça'] },
+    { time: '3:14.848', singers: ['nelsonned', 'mariliamendonça'] },
+    { time: '3:19.754', singers: [] }
   ];
 
   // Function to update the active singers
@@ -80,6 +96,10 @@ startButton.addEventListener('click', () => {
       updateActiveSingers(currentEntry.singers);
     }
   };
+  
+  // Play the music
+  const audio = new Audio('music.mp3');
+  audio.play();
 
   // Add event listener to check the time and update the active singers
   audio.addEventListener('timeupdate', checkTimeAndUpdateSingers);
