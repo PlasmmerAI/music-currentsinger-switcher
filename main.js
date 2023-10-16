@@ -12,6 +12,8 @@ startButton.addEventListener('click', () => {
 
   // Define the timeline
   const timeline = [
+    { time: 00, singers: ['nelsonned', 'mariliamendonça'] },
+    { time: 01, singers: [] },
     { time: 21, singers: ['mariliamendonça'] },
     { time: 23, singers: ['nelsonned', 'mariliamendonça'] },
     { time: 25, singers: ['mariliamendonça'] },
