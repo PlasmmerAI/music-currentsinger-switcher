@@ -11,61 +11,72 @@ startButton.addEventListener('click', () => {
 
   // Define the timeline
   const timeline = [
-    { time: 00, singers: ['nelsonned', 'mariliamendonça'] },
+    { time: 00, singers: ['singer1', 'singer2'] },
     { time: 01, singers: [] },
-    { time: 21.377, singers: ['mariliamendonça'] },
-    { time: 23.305, singers: ['nelsonned', 'mariliamendonça'] },
-    { time: 25.407, singers: ['mariliamendonça'] },
-    { time: 28.561, singers: ['nelsonned'] },
-    { time: 34.869, singers: [] },
-    { time: 35.921, singers: ['nelsonned'] },
-    { time: 42.053, singers: [] },
-    { time: 43.630, singers: ['nelsonned'] },
-    { time: 47.310, singers: ['nelsonned', 'mariliamendonça'] },
-    { time: 50.114, singers: [] },
-    { time: 52.041, singers: ['mariliamendonça'] },
-    { time: '1:09.038', singers: ['nelsonned', 'mariliamendonça'] },
-    { time: '1:13.769', singers: [] },
-    { time: '1:14.294', singers: ['nelsonned', 'mariliamendonça'] },
-    { time: '1:19.376', singers: [] },
-    { time: '1:21.479', singers: ['mariliamendonça'] },
-    { time: '1:36.197', singers: ['nelsonned', 'mariliamendonça'] },
-    { time: '1:46.535', singers: [] },
-    { time: '1:49.689', singers: ['nelsonned'] },
-    { time: '1:53.719', singers: ['mariliamendonça'] },
-    { time: '1:56.873', singers: ['nelsonned', 'mariliamendonça'] },
-    { time: '2:07.912', singers: ['nelsonned'] },
-    { time: '2:16.148', singers: ['nelsonned', 'mariliamendonça'] },
-    { time: '2:19.652', singers: [] },
-    { time: '2:20.529', singers: ['nelsonned', 'mariliamendonça'] },
-    { time: '2:22.982', singers: ['mariliamendonça'] },
-    { time: '2:35.247', singers: ['nelsonned', 'mariliamendonça'] },
-    { time: '2:48.214', singers: [] },
-    { time: '2:49.966', singers: ['nelsonned', 'mariliamendonça'] },
-    { time: '3:03.984', singers: [] },
-    { time: '3:04.860', singers: ['mariliamendonça'] },
-    { time: '3:07.488', singers: ['nelsonned', 'mariliamendonça'] },
-    { time: '3:10.993', singers: [] },
-    { time: '3:12.394', singers: ['mariliamendonça'] },
-    { time: '3:14.848', singers: ['nelsonned', 'mariliamendonça'] },
-    { time: '3:19.754', singers: [] }
+    { time: 13.117, singers: ['singer2'] },
+    { time: '1:01.253', singers: ['singer1'] },
+    { time: '1:02.781', singers: ['singer1', 'singer2'] },
+    { time: '1:15.898', singers: [] },
+    { time: '1:18.954', singers: ['singer1', 'singer2'] },
+    { time: '1:23.029', singers: ['singer1'] },
+    { time: '1:26.977', singers: ['singer2'] },
+    { time: '1:34.108', singers: ['singer1', 'singer2'] },
+    { time: '1:38.565', singers: ['singer2'] },
+    { time: '2:17.024', singers: ['singer1', 'singer2'] },
+    { time: '2:20.717', singers: ['singer1'] },
+    { time: '2:23.391', singers: ['singer2'] },
+    { time: '2:26.957', singers: ['singer1', 'singer2'] },
+    { time: '2:32.178', singers: ['singer1'] },
+    { time: '2:33.324', singers: ['singer1', 'singer2'] },
+    { time: '2:38.163', singers: ['singer1'] },
+    { time: '2:39.564', singers: ['singer1', 'singer2'] },
+    { time: '2:41.601', singers: ['singer1'] },
+    { time: '2:47.587', singers: ['singer2'] },
+    { time: '2:54.336', singers: ['singer1', 'singer2'] },
+    { time: '3:02.486', singers: ['singer2'] },
+    { time: '3:06.052', singers: ['singer1', 'singer2'] },
+    { time: '3:18.404', singers: [] },
+    { time: '3:19.550', singers: ['singer2'] },
+    { time: '3:23.371', singers: ['singer1', 'singer2'] },
+    { time: '3:27.828', singers: ['singer2'] },
+    { time: '3:31.775', singers: ['singer1', 'singer2'] },
+    { time: '3:46.420', singers: ['singer2'] },
+    { time: '4:00.046', singers: ['singer1', 'singer2'] },
+    { time: '4:02.084', singers: ['singer1'] },
+    { time: '4:03.102', singers: ['singer1', 'singer2'] },
+    { time: '4:05.013', singers: ['singer1'] },
+    { time: '4:08.196', singers: ['singer1', 'singer2'] },
+    { time: '4:10.488', singers: ['singer2'] },
+    { time: '4:12.399', singers: ['singer1'] },
+    { time: '4:14.309', singers: ['singer1', 'singer2'] },
+    { time: '4:16.346', singers: ['singer1'] },
+    { time: '4:19.657', singers: ['singer1', 'singer2'] },
+    { time: '4:21.313', singers: ['singer1'] },
+    { time: '4:21.695', singers: ['singer1', 'singer2'] },
+    { time: '4:24.496', singers: ['singer2'] },
+    { time: '4:29.972', singers: ['singer1', 'singer2'] },
+    { time: '4:31.373', singers: ['singer2'] },
+    { time: '4:34.557', singers: ['singer1', 'singer2'] },
+    { time: '4:47.037', singers: [] },
+    { time: '4:48.183', singers: ['singer2'] },
+    { time: '4:56.715', singers: [] }
   ];
 
   // Function to update the active singers
   const updateActiveSingers = (activeSingers) => {
-    const nelsonnedDiv = document.querySelector('.nelsonned');
-    const mariliamendonçaDiv = document.querySelector('.mariliamendonça');
+    const singer1Div = document.querySelector('.singer1');
+    const singer2Div = document.querySelector('.singer2');
 
     // Remove active class from all singers
-    nelsonnedDiv.classList.remove('active');
-    mariliamendonçaDiv.classList.remove('active');
+    singer1Div.classList.remove('active');
+    singer2Div.classList.remove('active');
 
     // Add active class to the specified singers
     activeSingers.forEach((singer) => {
-      if (singer === 'nelsonned') {
-        nelsonnedDiv.classList.add('active');
-      } else if (singer === 'mariliamendonça') {
-        mariliamendonçaDiv.classList.add('active');
+      if (singer === 'singer1') {
+        singer1Div.classList.add('active');
+      } else if (singer === 'singer2') {
+        singer2Div.classList.add('active');
       }
     });
   };
