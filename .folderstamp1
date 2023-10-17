@@ -14,7 +14,7 @@ IPFS hash: QmbFMke1KXqnYyBBWxB74N4c5SBnJMVAiMNRcGu6x1AwQH
   Size: 4096      	Blocks: 8          IO Block: 4096   directory
 Device: 8,20	Inode: 4261263     Links: 1
 Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
-Access: 2023-10-16 23:25:36.841236000 -0300
+Access: 2023-10-17 02:10:31.902695900 -0300
 Modify: 2023-10-16 23:25:36.829758300 -0300
 Change: 2023-10-16 23:25:36.829758300 -0300
  Birth: -
@@ -34,7 +34,7 @@ IPFS hash: QmQr5ZpyAvpmQvy2V9wK7Ref49PPbVTVuxkTcdQS8qmFnE
   Size: 0         	Blocks: 0          IO Block: 4096   directory
 Device: 8,20	Inode: 4261270     Links: 1
 Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
-Access: 2023-10-16 23:11:21.878300200 -0300
+Access: 2023-10-17 02:10:31.908696300 -0300
 Modify: 2023-10-16 04:32:32.717104000 -0300
 Change: 2023-10-16 23:08:30.095574900 -0300
  Birth: -
@@ -54,29 +54,39 @@ IPFS hash: QmUBg95MFbPjbDTnA7K2xhDgQt7vjEW7BmboGQhYDTu7uR
   Size: 8491098   	Blocks: 16592      IO Block: 4096   regular file
 Device: 8,20	Inode: 4261288     Links: 1
 Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
-Access: 2023-10-16 23:11:33.449756700 -0300
+Access: 2023-10-17 01:07:44.946006700 -0300
 Modify: 2023-10-16 19:29:39.426540000 -0300
 Change: 2023-10-16 23:08:30.368520600 -0300
  Birth: -
 IPFS hash: QmTnUo9dBWTn8USkwFMF8XMXhnZP6jH8pvEiwvvtHgXKyw
 ------------------------------
   File: ./Presentation-2.pptx
-  Size: 5660567   	Blocks: 11056      IO Block: 4096   regular file
-Device: 8,20	Inode: 4261258     Links: 1
+  Size: 10082973  	Blocks: 19696      IO Block: 4096   regular file
+Device: 8,20	Inode: 3141000     Links: 1
 Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
-Access: 2023-10-16 23:11:33.558183400 -0300
-Modify: 2023-10-16 17:08:47.003747700 -0300
-Change: 2023-10-16 23:27:54.896520000 -0300
+Access: 2023-10-17 05:09:52.192940300 -0300
+Modify: 2023-10-17 01:57:23.228522000 -0300
+Change: 2023-10-17 01:57:23.913086200 -0300
  Birth: -
-IPFS hash: QmZGRNDQs8oKfBEGRVXzZ8UWYu9Mc1bM2vYRoJnJt1sc5D
+IPFS hash: QmV9mDrZM4nvuCX3DuQdeSUw7kSmXM7QfWnqL4nNk921qT
+------------------------------
+  File: ./Presentation.pptx
+  Size: 12827575  	Blocks: 25056      IO Block: 4096   regular file
+Device: 8,20	Inode: 2292491     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-17 01:48:40.974049400 -0300
+Modify: 2023-10-17 01:48:40.974049400 -0300
+Change: 2023-10-17 01:48:41.410870700 -0300
+ Birth: -
+IPFS hash: Qmf1bQf2UmhwaZ6cmU8os5hTNfbbHB3rnJvVFMRYL9Rfpn
 ------------------------------
   File: ./Presentation.pptx_FILES
   Size: 0         	Blocks: 0          IO Block: 4096   directory
 Device: 8,20	Inode: 4261517     Links: 1
 Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
-Access: 2023-10-16 23:31:20.501597400 -0300
-Modify: 2023-10-16 23:31:18.124531700 -0300
-Change: 2023-10-16 23:31:18.124531700 -0300
+Access: 2023-10-17 02:10:32.007692100 -0300
+Modify: 2023-10-16 23:37:37.966016700 -0300
+Change: 2023-10-16 23:37:37.966016700 -0300
  Birth: -
 IPFS hash: 
 ------------------------------
