@@ -1,4 +1,4 @@
 Not priority:
-- Add a 5 seconds delay after fullscreen, with a counter div that then will disappear
+- Add a 5 seconds delay after fullscreen, with a regressive counter div that then will disappear after finished counting; together with disappearing, will execute a function to run the rest of the scripts and the music
 - faster way of preloading CSS active background images (by leveraging the above)
 -? load CSS from external file
