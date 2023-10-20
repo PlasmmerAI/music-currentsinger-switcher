@@ -1,1 +1,0 @@
-when startButton is clicked: browser will go fullscreen, startButton disappear, then now: add a 5 seconds delay with a regressive counter div that then will disappear after finished counting; together with disappearing that div, will execute a function to run the rest of the scripts (such as const timeline) and the music
