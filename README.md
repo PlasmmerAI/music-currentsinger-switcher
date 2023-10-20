@@ -26,8 +26,8 @@ Also, remember to place your music in this project's folder, renaming it to `mus
 </table>
 <!-- DivTable.com -->
 
-## Live example:
+## Live examples:
 
-The first video that used this tool:
+The first videos that used this tool:
 
-<a href="https://www.youtube.com/watch?v=tJzU6Mehg0Q" target="_blank"><img src="https://i.ytimg.com/vi/tJzU6Mehg0Q/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCLE40gH8r6aGHc4E0LUX8ofA3Hrw"/></a>
+<a href="https://www.youtube.com/watch?v=tJzU6Mehg0Q" target="_blank"><img src="https://i.ytimg.com/vi/tJzU6Mehg0Q/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCLE40gH8r6aGHc4E0LUX8ofA3Hrw"/></a> <a href="https://www.youtube.com/watch?v=ZCVHpeFxHaM" target="_blank"><img src="https://i.ytimg.com/vi/ZCVHpeFxHaM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDWK09sq_9ax_yetNJqPI1w_4dRIQ"/></a>
