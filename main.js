@@ -9,6 +9,38 @@ startButton.addEventListener('click', () => {
   // Hide the start button
   startButton.style.display = 'none';
   
+  // Function to update the active singers
+  const updateActiveSingers = (activeSingers) => {
+    const singer1Div = document.querySelector('.singer1');
+    const singer2Div = document.querySelector('.singer2');
+
+    // Remove active class from all singers
+    singer1Div.classList.remove('active');
+    singer2Div.classList.remove('active');
+
+    // Add active class to the specified singers
+    activeSingers.forEach((singer) => {
+      if (singer === 'singer1') {
+        singer1Div.classList.add('active');
+      } else if (singer === 'singer2') {
+        singer2Div.classList.add('active');
+      }
+    });
+  };
+  
+    // Pre-load active image for all singers (so no delay when the video begin and show singers' active CSS state)
+    singer1Div.classList.add('active');
+    singer2Div.classList.add('active');
+    let preloaddelay = 1; 
+  const preloaddelayInterval = setInterval(() => {
+    preloaddelay--;
+    if (preloaddelay === 0) {
+      clearInterval(preloaddelayInterval);
+      singer1Div.classList.remove('active');
+      singer2Div.classList.remove('active');
+    }
+  }, 1000);
+  
   // Add a 5 seconds delay with a regressive counter div
   const delayDiv = document.createElement('div');
   delayDiv.style.position = 'absolute';
@@ -84,25 +116,6 @@ function afterdelayrun() {
     { time: '4:48.183', singers: ['singer2'] },
     { time: '4:56.715', singers: [] }
   ];
-
-  // Function to update the active singers
-  const updateActiveSingers = (activeSingers) => {
-    const singer1Div = document.querySelector('.singer1');
-    const singer2Div = document.querySelector('.singer2');
-
-    // Remove active class from all singers
-    singer1Div.classList.remove('active');
-    singer2Div.classList.remove('active');
-
-    // Add active class to the specified singers
-    activeSingers.forEach((singer) => {
-      if (singer === 'singer1') {
-        singer1Div.classList.add('active');
-      } else if (singer === 'singer2') {
-        singer2Div.classList.add('active');
-      }
-    });
-  };
 
   // Function to check the current time and update the active singers accordingly
   const checkTimeAndUpdateSingers = () => {
