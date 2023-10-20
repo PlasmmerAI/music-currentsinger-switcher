@@ -114,4 +114,25 @@ startButton.addEventListener('click', () => {
 
   // Add event listener to check the time and update the active singers
   audio.addEventListener('timeupdate', checkTimeAndUpdateSingers);
+
+  // Add a 5 seconds delay with a regressive counter div
+  const delayDiv = document.createElement('div');
+  delayDiv.style.position = 'absolute';
+  delayDiv.style.top = '50%';
+  delayDiv.style.left = '50%';
+  delayDiv.style.transform = 'translate(-50%, -50%)';
+  delayDiv.style.fontSize = '5rem';
+  delayDiv.style.color = 'white';
+  document.body.appendChild(delayDiv);
+
+  let delay = 5;
+  const delayInterval = setInterval(() => {
+    delay--;
+    delayDiv.textContent = delay;
+    if (delay === 0) {
+      clearInterval(delayInterval);
+      delayDiv.style.display = 'none';
+      // Execute a function to run the rest of the scripts (such as const timeline) and the music
+    }
+  }, 1000);
 });
