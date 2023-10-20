@@ -1,0 +1,6 @@
+body{background:url(./img/stage-lights-background-tdvn4t1fwtpyl8tp.webp);background-size:cover}
+.uac-logotype{background:url(./img/logotype.png);background-size:cover;position:fixed;top:0px;left:5px;width:465px;height:175px;}
+.singer1{background:url(./img/singer1.png);background-size:cover;width:370px;height:730px;position:fixed;bottom:0px;left:320px}
+.singer1.active{background:url(./img/singer1_active.png);background-size:cover;width:370px;height:730px}
+.singer2{background:url(./img/singer2.png);background-size:cover;width:890px;height:760px;position:fixed;bottom:0px;right:60px}
+.singer2.active{background:url(./img/singer2_active.png);background-size:cover;width:890px;height:760px}

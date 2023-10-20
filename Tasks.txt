@@ -1,3 +1,0 @@
-Not priority:
-- faster way of preloading CSS active background images
--? load CSS from external file
